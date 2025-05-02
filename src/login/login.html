@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintecs Financeira   - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Sidebar com informações -->
+        <div class="auth-sidebar">
+            <div class="auth-logo"><span>Quintecs</span> Financeira </div>
+            <h1>Bem-vindo de volta!</h1>
+            <p>Acesse sua conta para simular empréstimos, acompanhar suas propostas e muito mais.</p>
+        </div>
+        
+        <!-- Área principal de login/cadastro -->
+        <div class="auth-main">
+            <div class="auth-card">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" onclick="showTab('login')">Login</div>
+                    <div class="auth-tab" onclick="showTab('register')">Cadastre-se</div>
+                </div>
+                
+                <!-- Formulário de Login -->
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginCpf">CPF</label>
+                        <input type="text" id="loginCpf" class="form-control" placeholder="000.000.000-00" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword">Senha</label>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Sua senha" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Entrar</a>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <a href="#" onclick="showTab('forgot')">Esqueci minha senha</a>
+                    </div>
+                </form>
+                
+                <!-- Formulário de Cadastro -->
+                <form id="registerForm" class="auth-form hidden">
+                    <div class="form-group">
+                        <label for="registerName">Nome Completo</label>
+                        <input type="text" id="registerName" class="form-control" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerCpf">CPF</label>
+                        <input type="text" id="registerCpf" class="form-control" placeholder="000.000.000-00" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerEmail">E-mail</label>
+                        <input type="email" id="registerEmail" class="form-control" placeholder="seu@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerPhone">Telefone</label>
+                        <input type="tel" id="registerPhone" class="form-control" placeholder="(00) 00000-0000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerPassword">Senha</label>
+                        <input type="password" id="registerPassword" class="form-control" placeholder="Crie uma senha segura" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirme sua senha</label>
+                        <input type="password" id="registerConfirmPassword" class="form-control" placeholder="Digite a senha novamente" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        Já tem uma conta? <a href="#" onclick="showTab('login')">Faça login</a>
+                    </div>
+                </form>
+                
+                <!-- Recuperação de Senha -->
+                <form id="forgotForm" class="auth-form hidden">
+                    <div class="form-group">
+                        <label for="forgotEmail">E-mail ou CPF</label>
+                        <input type="text" id="forgotEmail" class="form-control" placeholder="Seu e-mail ou CPF" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Recuperar Senha</button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <a href="#" onclick="showTab('login')">Voltar para login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Principal (após login) -->
+    <div id="mainApp" class="hidden">
+        <!-- Seu conteúdo principal do site aqui -->
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>

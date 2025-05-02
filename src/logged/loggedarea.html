@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Financeira - Área do Cliente</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="loggedarea.css">
+</head>
+<body>
+    <!-- Verificação de Login -->
+    <script>
+       
+    </script>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"><span>Quintecs</span> Financeira  </div>
+            <div class="user-info">
+                <span id="userCpf"></span>
+                <button onclick="logout()">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1>Olá, <span id="userName"></span>!</h1>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h2>Simule seu Empréstimo</h2>
+                <form id="loanForm">
+                    <div class="form-group">
+                        <label>Valor Desejado (R$)</label>
+                        <input type="text" id="loanAmount" placeholder="5.000,00">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Simular</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <h2>Seus Contratos</h2>
+                <p>Nenhum contrato ativo.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="loggedarea.js"></script>
+</body>
+</html>

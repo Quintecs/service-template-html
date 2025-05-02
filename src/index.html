@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintecs Financeira - Empréstimos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><span>Quintecs</span> Financeira </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./emprestimos/emprestimos.html">Empréstimos</a></li>
+                <li><a href="./comoFunciona/comoFunciona.html">Como funciona</a></li>
+                <li><a href="./perguntas/perguntas.html">Perguntas</a></li>
+                <li><a href="./contato/contato.html">Contato</a></li>
+            </ul>
+            <a href="./login/login.html" class="btn btn-primary">Acessar minha conta</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Empréstimo   mesmo com nome sujo!</h1>
+            <p>O <strong>Quintecs Crédito  </strong> ajuda você a conseguir dinheiro rápido, mesmo com restrição no SPC/Serasa. Simule agora!</p>
+            <a href="#calculator" class="btn btn-secondary">Simular empréstimo</a>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="container" id="calculator">
+        <div class="calculator">
+            <h2>Quanto você precisa?</h2>
+            <form id="loan-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="loan-amount">Valor do empréstimo</label>
+                        <input type="text" id="loan-amount" class="form-control" placeholder="R$ 5.000,00">
+                    </div>
+                    <div class="form-group">
+                        <label for="loan-term">Parcelas</label>
+                        <select id="loan-term" class="form-control">
+                            <option value="">Selecione</option>
+                            <option value="12">12x</option>
+                            <option value="24">24x</option>
+                            <option value="36">36x</option>
+                            <option value="48">48x</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="income">Sua renda mensal</label>
+                    <input type="text" id="income" class="form-control" placeholder="R$ 2.500,00">
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF (somente números)</label>
+                    <input type="text" id="cpf" class="form-control" placeholder="000.000.000-00">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Simular agora</button>
+                
+                <div class="result-box" id="result" style="display: none;">
+                    <p>Sua parcela estimada será de:</p>
+                    <div class="result-value" id="monthly-payment">R$ 350,00</div>
+                    <p>em <span id="result-term">24</span> parcelas</p>
+                    <!-- Botão do WhatsApp atualizado -->
+                    <a href="#" class="btn btn-whatsapp" id="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Contratar pelo WhatsApp
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vantagens do Quintecs Crédito</h2>
+                <p>Por que nossos clientes confiam em nós</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rápido e Fácil</h3>
+                    <p>Resposta em até 24h e dinheiro na conta em 48h após aprovação</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <h3>Nome Sujo?</h3>
+                    <p>Avaliamos seu caso mesmo com restrição no CPF ou score baixo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Sem Burocracia</h3>
+                    <p>Documentos simples e processo 100% digital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como funciona</h2>
+                <p>Em 4 passos você resolve seu problema</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Simule</h3>
+                    <p>Informe o valor que precisa e em quantas parcelas</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Cadastre-se</h3>
+                    <p>Preencha seus dados pessoais e financeiros</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Envie documentos</h3>
+                    <p>RG, CPF, comprovante de renda e residência</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Receba o dinheiro</h3>
+                    <p>Após aprovação, o dinheiro cai na sua conta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Clientes que confiaram no Quintecs</h2>
+            </div>
+            <div class="features-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Estava com o nome sujo há anos e o  me ajudou a conseguir um empréstimo para reorganizar minhas contas. As parcelas cabem no meu bolso!"</p>
+                    <p class="testimonial-author">- Marcos A., São Paulo</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Atendimento excelente! Me explicaram tudo direitinho e consegui o dinheiro que precisava para pagar minhas dívidas."</p>
+                    <p class="testimonial-author">- Ana C., Rio de Janeiro</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Fui aprovado mesmo com restrição no nome. Recomendo o Quintecs para quem precisa de uma segunda chance!"</p>
+                    <p class="testimonial-author">- Roberto S., Minas Gerais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Precisa de dinheiro rápido?</h2>
+            <p>O Quintecs Crédito   tem a solução para você!</p>
+            <a href="#calculator" class="btn btn-primary">Simular agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quintecs Crédito</h3>
+                    <p>Soluções financeiras para quem precisa de crédito, mesmo com restrições.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Empréstimos</h3>
+                    <ul class="footer-links">
+                        <li><a href="./emprestimos/emprestimos.html"> </a></li>
+                        <li><a href="./emprestimos/emprestimos.html">Consignado</a></li>
+                        <li><a href="./emprestimos/emprestimos.html">Com garantia</a></li>
+                        <li><a href="./emprestimos/emprestimos.html">Para negativados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul class="footer-links">
+                        <li><a href="./perguntas/perguntas.html">Sobre nós</a></li>
+                        <li><a href="./termos/termos.html">Termos de uso</a></li>
+                        <li><a href="./politicaPrivacidade/politicaPrivacidade.html">Política de privacidade</a></li>
+                        <li><a href="./trabalheConosco/trabalheConosco.html">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 4004-4004</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@Quintecs.com.br</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Paulista, 1000 - São Paulo/SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Quintecs Crédito  . CNPJ: 00.000.000/0000-00. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

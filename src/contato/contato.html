@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Quintecs Financeira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><span>Quintecs</span> Financeira </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../emprestimos/emprestimos.html">Empréstimos</a></li>
+                <li><a href="../comoFunciona/comoFunciona.html">Como funciona</a></li>
+                <li><a href="../perguntas/perguntas.html">Perguntas</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+            <a href="../login/login.html" class="btn btn-primary">Acessar minha conta</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Fale Conosco</h1>
+                <p>Estamos aqui para ajudar você a encontrar a melhor solução financeira</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Entre em Contato</h2>
+                    <p>Escolha a forma de contato que preferir</p>
+                </div>
+                
+                <div class="contact-container">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefone</h3>
+                                <p>Atendimento de segunda a sexta, das 9h às 18h</p>
+                                <a href="tel:+551140044004">(11) 4004-4004</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>Atendimento rápido via mensagem</p>
+                                <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>E-mail</h3>
+                                <p>Respondemos em até 24 horas úteis</p>
+                                <a href="mailto:contato@Quintecs.com.br">contato@Quintecs.com.br</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Endereço</h3>
+                                <p>Av. Paulista, 1000 - Bela Vista<br>
+                                São Paulo/SP - CEP 01310-100</p>
+                                <a href="#map">Ver no mapa</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" class="form-control" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="emprestimo">Simulação de Empréstimo</option>
+                                    <option value="duvida">Dúvida sobre Serviços</option>
+                                    <option value="reclamacao">Reclamação</option>
+                                    <option value="elogio">Elogio</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section" id="map">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Onde Estamos</h2>
+                    <p>Visite nossa sede ou agende uma reunião</p>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3764152672734!2d-46.65823492401701!3d-23.55493027879953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cdcdef6f1b%3A0xc230e3120ca14558!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1681234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quintecs Crédito</h3>
+                    <p>Soluções financeiras para quem precisa de crédito, mesmo com restrições.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Empréstimos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../emprestimos/emprestimos.html"> </a></li>
+                        <li><a href="../emprestimos/emprestimos.html">Consignado</a></li>
+                        <li><a href="../emprestimos/emprestimos.html">Com garantia</a></li>
+                        <li><a href="../emprestimos/emprestimos.html">Para negativados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul class="footer-links">
+                        <li><a href="./perguntas.html">Sobre nós</a></li>
+                        <li><a href="../termos/termos.html">Termos de uso</a></li>
+                        <li><a href="../politicaPrivacidade/politicaPrivacidade.html">Política de privacidade</a></li>
+                        <li><a href="../trabalheConosco/trabalheConosco.html">Trabalhe conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 4004-4004</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@Quintecs.com.br</span>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Paulista, 1000 - São Paulo/SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Quintecs Crédito  . CNPJ: 00.000.000/0000-00. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contato.js"></script>
+</body>
+</html>
