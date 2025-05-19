@@ -1,0 +1,19 @@
+{
+  "name": "service-template-html",
+  "version": "1.0.0",
+  "description": "Projeto de testes para o Estagio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quintecs/service-template-html.git"
+  },
+  "author": "gustavo quintans <gustavosantos.2095@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quintecs/service-template-html/issues"
+  },
+  "homepage": "https://github.com/Quintecs/service-template-html#readme"
+}

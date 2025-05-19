@@ -1,4 +1,5 @@
 // Máscaras para os campos
+
 document.getElementById('loan-amount').addEventListener('input', function(e) {
     let value = e.target.value.replace(/\D/g, '');
     value = (value / 100).toLocaleString('pt-BR', {
